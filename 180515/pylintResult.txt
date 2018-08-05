@@ -1,0 +1,20 @@
+************* Module lambdaVSpartial
+C:  4, 0: No space allowed before :
+    funcs.append(lambda : print(i))
+                        ^ (bad-whitespace)
+C: 15, 0: Exactly one space required after comma
+    funcs.append(partial(print,i))
+                              ^ (bad-whitespace)
+C: 16, 0: Trailing whitespace (trailing-whitespace)
+C: 19, 0: Final newline missing (missing-final-newline)
+C:  1, 0: Module name "lambdaVSpartial" doesn't conform to snake_case naming style (invalid-name)
+C:  1, 0: Missing module docstring (missing-docstring)
+C:  1, 0: Constant name "funcs" doesn't conform to UPPER_CASE naming style (invalid-name)
+W:  4,32: Cell variable i defined in loop (cell-var-from-loop)
+W:  4,32: Using possibly undefined loop variable 'i' (undefined-loop-variable)
+C: 11, 0: Import "from functools import partial" should be placed at the top of the module (wrong-import-position)
+C: 13, 0: Constant name "funcs" doesn't conform to UPPER_CASE naming style (invalid-name)
+
+------------------------------------------------------------------
+Your code has been rated at 0.00/10 (previous run: 0.00/10, +0.00)
+
